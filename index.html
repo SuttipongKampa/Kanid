@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Kanidsas</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body onload="defaultpage()">
+    <div class="con1"><p>เกมส์คณิตศาสตร์</p></div>
+
+    <div class="con2">
+        <div class="button" onclick="Reload()">เริ่ม</div>
+        <div><p class ="fz2" id="showscore">คะแนน : 0 / 0</p></div>
+    </div>
+
+    <div class="con3">
+        <div class="margin"><input class="fz2" type="text" id="ran1" name="ran1" size="3" disabled></div>
+        <div class="margin"id="op">+</div>
+        <div class="margin"><input class="fz2" type="text" id="ran2" name="ran2" size="3" disabled></div>
+        <div class="margin">=</div>
+        <div class="margin"><input class="fz2" type="text" placeholder="คำตอบ" id="ran3" name="ran3" size="3"></div>
+    </div>
+
+    <div class="con4">
+        <input class="margin" type="radio" name="choice" value="+" onchange="operater(this)" checked>
+        <label>+</label>
+        <input class="margin" type="radio" name="choice" value="-" onchange="operater(this)">
+        <label>-</label>
+        <input class="margin" type="radio" name="choice" value="×" onchange="operater(this)">
+        <label>×</label>
+        <input class="margin" type="radio" name="choice" value="÷" onchange="operater(this)">
+        <label>÷</label>
+    </div>
+    
+    <div class="con5">
+        <div class="fz"><p id="Ans">เช็คผลลัพธ์</p></div>
+        <div> <button class="fz2" onclick="send();">ส่งคำตอบ</button></div>
+        
+    </div>
+
+  
+   
+
+
+    <script src="./app.js" ></script>
+</body>
+</html>
